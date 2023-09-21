@@ -30,6 +30,7 @@ CREATE (a:Person {name: "Alice", role: "Developer"}),
 // Create a relationship "KNOWS" between Alice and Bob
 CREATE (a)-[:KNOWS {since: "2020-01-01"}]->(b)
 RETURN a, b
+```
 
 ### 3. View the Graph
 To visualize the created graph, execute the commands in the `view-graph.cypher` file.
@@ -38,7 +39,7 @@ To visualize the created graph, execute the commands in the `view-graph.cypher` 
 // Retrieve the nodes and their relationships
 MATCH (a:Person)-[r:KNOWS]->(b:Person)
 RETURN a, r, b
-
+```
 ---
 
 **Note**: For more complex setups and interactions, consider diving deeper into the Neo4j documentation and exploring advanced Cypher queries.
