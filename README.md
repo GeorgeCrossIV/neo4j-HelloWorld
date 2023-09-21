@@ -44,3 +44,11 @@ RETURN a, r, b
 **Note**: For more complex setups and interactions, consider diving deeper into the Neo4j documentation and exploring advanced Cypher queries.
 
 ---
+
+## Results
+![Results](HelloWorld-results.png)
+
+## Notes
+- Neo4j is relatively easy to install
+- The Cypher language is easy to understand - especially for SQL developers; whereas Gremlin is typically easier for developers to understand
+- The notebook was easy to use and provided basic graph visualizations
