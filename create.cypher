@@ -1,5 +1,7 @@
-// Create a simple node with a label "Greeting" and a property "message"
-CREATE (:Greeting {message: "Hello, World!"});
+// Create two nodes with labels "Person"
+CREATE (a:Person {name: "Alice", role: "Developer"}),
+       (b:Person {name: "Bob", role: "Manager"})
 
-// Retrieve and return the greeting
-MATCH (g:Greeting) RETURN g.message AS message;
+// Create a relationship "KNOWS" between Alice and Bob
+CREATE (a)-[:KNOWS {since: "2020-01-01"}]->(b)
+RETURN a, b
